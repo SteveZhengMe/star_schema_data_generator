@@ -28,14 +28,18 @@ Based on the business case, seven excel files have all the enrollment and dropof
 
 ![Application GUI](./docs/application.png)
 
-- Professor Numbers: the application will generate n professors with name, DOB, age, etc.
-- Student Enroll (Year): the generated students learn in the College from 2015 to 2021.
-- Course per program: the application will generate 44 programs(It can define [here](./src/constants_programs.py)), this input is to define how many courses in each program. Ex. Set 5 will define 44*5 courses.
-Hybrid learning starts from (Year): the data will have more dropoff rate after the year.
-- Students Number pre-year: the students of a year. Ex. If I set student enrolls from 2015 to 2021 and set 15000 pre-year, the application will generate (2021-2015)*15000 students information. Some students will dropoff based on the dropoff rate-setting before/after the "hybrid learning starts year."
-- "Before/After Hybrid Drop-off(%)" and "because of remote(%)": set the first one ten and the second one 30 mean 10% of the students will dropoff and 30% of the dropoff students are because of the remote learning.
+- **Professor Numbers**: the application will generate n professors with name, DOB, age, etc.
+- **Student Enroll (Year)**: the generated students learn in the College from 2015 to 2021.
+- **Course per program**: the application will generate 44 programs(It can define [here](./src/constants_programs.py)), this input is to define how many courses in each program. Ex. Set 5 will define 44*5 courses.
+- **Hybrid learning starts from (Year)**: the data will have more dropoff rate after the year.
+- **Students Number pre-year**: the students of a year. Ex. If I set student enrolls from 2015 to 2021 and set 15000 pre-year, the application will generate (2021-2015)*15000 students information. Some students will dropoff based on the dropoff rate-setting before/after the "hybrid learning starts year."
+- **"Before/After Hybrid Drop-off(%)" and "because of remote(%)"**: set the first one ten and the second one 30 mean 10% of the students will dropoff and 30% of the dropoff students are because of the remote learning.
+
+---
 
 **Because the application is not async when you click run, the UI will freeze for 1 minute to generate the result. Please wait.**
+
+---
 
 ## Source Files
 
@@ -43,7 +47,7 @@ Hybrid learning starts from (Year): the data will have more dropoff rate after t
   - Student's DOB
   - Professor's DOB
   - Professor's working year
-- [baseclass.py](./src/base class.py): The common functions and base classes
+- [baseclass.py](./src/baseclass.py): The common functions and base classes
 - [constants_continent.py](./src/constants_continent.py): The original places of the students. Change this if you want to analyze the different behaviours of the students
 - [constants_dropoffreasons.py](.src/): Drop-off reasons. You can add, remove or modify these reasons.
 - [constants_name.py](.src/constants_name.py): Random people names
