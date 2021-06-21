@@ -1,4 +1,4 @@
-# Start Schema Data Generator
+# Star Schema Data Generator
 
 This application can generate excel files that have the relationship of a star schema. The excel files represent the data of the following business cases.
 
